@@ -1,7 +1,8 @@
 ```markdown
 # Market Trends Tracker
 
-A Python web application that scrapes product data from an online store and tracks market trends. The application uses Flask for the web framework, SQLite for the database, and Beautiful Soup for web scraping.
+A Python web application that scrapes product data from an online store and tracks market trends.
+The application uses Flask for the web framework, SQLite for the database, and Beautiful Soup for web scraping.
 
 ## Features
 
