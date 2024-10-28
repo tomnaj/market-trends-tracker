@@ -1,4 +1,4 @@
-```markdown
+
 # Market Trends Tracker
 
 A Python web application that scrapes product data from an online store and tracks market trends.
