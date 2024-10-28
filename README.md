@@ -70,5 +70,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 1. **Modify Links and Details**: Make sure to replace `yourusername` in the clone command with your actual GitHub username. Adjust the usage instructions and feature list as needed based on your project specifics.
 2. **Create `requirements.txt`**: If you haven't already, create a `requirements.txt` file in your project directory that lists all your dependencies, which might include `Flask`, `requests`, `beautifulsoup4`, and `apscheduler`.
 3. **Add License**: If you want to specify a license, create a `LICENSE` file in your repository as well.
-
-You can create this `README.md` file in your project directory and then add, commit, and push it to your GitHub repository.
