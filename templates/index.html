@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Market Trends Tracker</title>
+</head>
+<body>
+    <h1>Market Trends Tracker</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Rating</th>
+                <th>Link</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if products %}
+                {% for product in products %}
+                <tr>
+                    <td>{{ product[0] }}</td>  <!-- Product Name -->
+                    <td>${{ product[1] }}</td>  <!-- Price -->
+                    <td>{{ product[2] }}</td>   <!-- Availability -->
+                    <td>{{ product[3] }}</td>
+                    <td><a href="{{ product[4] }}" target="_blank">View</a></td><!-- Rating -->
+                    <td>{{ product[5] }}</td>   <!-- Last Updated -->
+                     <!-- Product URL -->
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="6">No products available</td> <!-- Message if no products -->
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</body>
+</html>
